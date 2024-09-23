@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <a>BeeService</a>
+            </div>
+            <i class="fa fa-navicon" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="beranda.html">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+
+            <li>
+                <a href="layanan.html">
+                    <i class="fa fa-wrench"></i>
+                    <span class="nav-item">Layanan</span>
+                </a>
+                <span class="tooltip">Layanan</span>
+            </li>
+            
+            <li>
+                <a href="toko.html">
+                    <i class="fa fa-info-circle"></i>
+                    <span class="nav-item">Informasi Toko</span>
+                </a>
+                <span class="tooltip">Informasi Toko</span>
+            </li>
+
+            <li>
+                <a href="pesanan.html">
+                    <i class="fa fa-check-square-o"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+                <span class="tooltip">Pesanan</span>
+            </li>
+
+            <li>
+                <a href="schedule.html">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-item">Jadwal</span>
+                </a>
+                <span class="tooltip">Jadwal</span>
+            </li>
+
+            <li>
+                <a href="riwayat.html">
+                    <i class="fa fa-history"></i>
+                    <span class="nav-item">Riwayat</span>
+                </a>
+                <span class="tooltip">Riwayat</span>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-item">Hubungi Kami</span>
+                </a>
+                <span class="tooltip">Hubungi Kami</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="riwayat-content">
+        <main class="table">
+            <section class="table-header">
+                <h1>Riwayat Pemesanan</h1>
+                <div class="input-group">
+                    <input type="search" class="search-input" placeholder="Search...">
+                    <i class="fa fa-search"></i>
+                </div>
+            </section>
+            <section class="table-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> Toko </th>
+                            <th> Tanggal Pemesanan </th>
+                            <th> Layanan </th>
+                            <th> Status </th>
+                            <th> Harga </th>
+                            <th> Beri Penilaian </th>
+                        </tr>
+                    </thead>
+                    <tbody id="history-tbody">
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <div class="popup" id="popup">
+            <img src="images/tick.jpg" alt="">
+            <h2>Terima Kasih!</h2>
+            <p>Rating Anda berhasil dikirim. Terima kasih atas penilaian Anda!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024 - BeeService Inc.</p>
+    </footer>
+
+    <script src="search.js"></script>
+
+    <script>
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+</body>
+</html>

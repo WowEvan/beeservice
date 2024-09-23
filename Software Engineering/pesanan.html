@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>   
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <a>BeeService</a>
+            </div>
+            <i class="fa fa-navicon" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="beranda.html">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+
+            <li>
+                <a href="layanan.html">
+                    <i class="fa fa-wrench"></i>
+                    <span class="nav-item">Layanan</span>
+                </a>
+                <span class="tooltip">Layanan</span>
+            </li>
+            
+            <li>
+                <a href="toko.html">
+                    <i class="fa fa-info-circle"></i>
+                    <span class="nav-item">Informasi Toko</span>
+                </a>
+                <span class="tooltip">Informasi Toko</span>
+            </li>
+
+            <li>
+                <a href="pesanan.html">
+                    <i class="fa fa-check-square-o"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+                <span class="tooltip">Pesanan</span>
+            </li>
+
+            <li>
+                <a href="schedule.html">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-item">Jadwal</span>
+                </a>
+                <span class="tooltip">Jadwal</span>
+            </li>
+
+            <li>
+                <a href="riwayat.html">
+                    <i class="fa fa-history"></i>
+                    <span class="nav-item">Riwayat</span>
+                </a>
+                <span class="tooltip">Riwayat</span>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-item">Hubungi Kami</span>
+                </a>
+                <span class="tooltip">Hubungi Kami</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="pesanan-content">
+        <h1 class="pesanan-title">Detail Pemesanan Jasa</h1>
+        <section class="slider" id="card-container">
+            <span class="arrow left-arrow">&#129120;</span>
+            <span class="arrow right-arrow">&#129122;</span>
+        </section>
+        <div class="slider-dots"></div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024 - BeeService Inc.</p>
+    </footer>
+
+    <script src="pesanan.js"></script>
+
+</body>
+</html>

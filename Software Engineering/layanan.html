@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <a>BeeService</a>
+            </div>
+            <i class="fa fa-navicon" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="beranda.html">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+
+            <li>
+                <a href="layanan.html">
+                    <i class="fa fa-wrench"></i>
+                    <span class="nav-item">Layanan</span>
+                </a>
+                <span class="tooltip">Layanan</span>
+            </li>
+            
+            <li>
+                <a href="toko.html">
+                    <i class="fa fa-info-circle"></i>
+                    <span class="nav-item">Informasi Toko</span>
+                </a>
+                <span class="tooltip">Informasi Toko</span>
+            </li>
+
+            <li>
+                <a href="pesanan.html">
+                    <i class="fa fa-check-square-o"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+                <span class="tooltip">Pesanan</span>
+            </li>
+
+            <li>
+                <a href="schedule.html">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-item">Jadwal</span>
+                </a>
+                <span class="tooltip">Jadwal</span>
+            </li>
+
+            <li>
+                <a href="riwayat.html">
+                    <i class="fa fa-history"></i>
+                    <span class="nav-item">Riwayat</span>
+                </a>
+                <span class="tooltip">Riwayat</span>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-item">Hubungi Kami</span>
+                </a>
+                <span class="tooltip">Hubungi Kami</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+    
+    <h1 class="layanan-title">Pilih Barang Elektronik Anda</h1>
+    <div class="layanan-content">
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/ac.jpg" alt="">
+                <h3>Air Conditioner</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Cuci-AC')">Cuci AC</p>
+                <p onclick="redirect('AC-Tidak-Dingin')">Tidak Dingin</p>
+                <p onclick="redirect('AC-Bocor-Air')">Bocor Air</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Air Conditioner</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/kulkas.jpg" alt="">
+                <h3>Kulkas</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Kulkas-Tidak-Dingin')">Tidak Dingin</p>
+                <p onclick="redirect('Kulkas-Bocor-Air')">Bocor Air</p>
+                <p onclick="redirect('Kulkas-Menyetrum')">Kulkas Menyetrum</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Kulkas</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/freezer.jpg" alt="">
+                <h3>Freezer</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Freezer-Tidak-Dingin')">Tidak Dingin</p>
+                <p onclick="redirect('Freezer-Bocor-Air')">Bocor Air</p>
+                <p onclick="redirect('Pintu-Freezer-Rusak')">Pintu Rusak</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Freezer</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/mesincuci.jpg" alt="">
+                <h3>Mesin Cuci</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Mesin-Cuci-Tidak-Bekerja')">Mesin Tidak Berputar</p>
+                <p onclick="redirect('Masalah-Tombol-Mesin-Cuci')">Masalah pada Panel Kontrol</p>
+                <p onclick="redirect('Masalah-Air-Mesin-Cuci')">Mesin Tidak Mengisi atau Membuang Air</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Mesin Cuci</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/dispenser.jpg" alt="">
+                <h3>Dispenser</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Dispenser-Tidak-Keluar-Air')">Tidak Mengeluarkan Air</p>
+                <p onclick="redirect('Air-Dispenser-Bermasalah')">Air Tidak Dingin atau Panas</p>
+                <p onclick="redirect('Kebocoran-Air-Dispenser')">Kebocoran Air</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Dispenser</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/showcase.jpg" alt="">
+                <h3>Showcase</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Showcase-Tidak-Dingin')">Tidak Dingin</p>
+                <p onclick="redirect('Pintu-Showcase-Rusak')">Pintu Tidak Rapat</p>
+                <p onclick="redirect('Suara-Showcase-Bermasalah')">Suara Tidak Biasa</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Showcase</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/chiller.jpg" alt="">
+                <h3>Chiller</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Chiller-Tidak-Dingin')">Tidak Dingin</p>
+                <p onclick="redirect('Chiller-Kebocoran')">Kebocoran</p>
+                <p onclick="redirect('Mesin-Chiller-Rusak')">Mesin Rusak</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Chiller</h3>
+            </div>
+        </div>
+
+        <div class="electronic" onclick="flip(this)">
+            <div class="electronic_desc front-content">
+                <img src="images/undercounter.jpg" alt="">
+                <h3>Undercounter</h3>
+            </div>
+            <div class="electronic_desc back-content">
+                <p onclick="redirect('Undercounter-Tidak-Dingin')">Tidak Dingin</p>
+                <p onclick="redirect('Pembekuan-Tidak-Normal')">Pembekuan Berlebihan</p>
+                <p onclick="redirect('Pintu-Undercounter-Rusak')">Pintu atau Seal Rusak</p>
+                <p onclick="redirect('others')">Lainnya</p>
+                <h3>Undercounter</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024 - BeeService Inc.</p>
+    </footer>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+    
+        btn.onclick = function(){
+            sidebar.classList.toggle('active');
+        };
+
+        function flip(element){
+            element.classList.toggle('flip');
+        }
+        let open = null;
+        function flip(element){
+            if(open && open !== element){
+                open.classList.remove('flip');
+            }
+            element.classList.toggle('flip');
+            open = element.classList.contains('flip') ? element : null;
+        }
+            
+        function redirect(option){
+            console.log('Redirecting to: ' + option);
+            if (option === 'others') {
+                window.location.href = 'contact.html';
+            } else {
+                window.location.href = 'pilihantoko.html?service=' + encodeURIComponent(option);
+            }
+        }
+
+        function createElectronicCards(){
+            const layananContent = document.querySelector('.layanan-content');
+
+            electronics.forEach(electronic => {
+                const electronicCard = document.createElement('div');
+                electronicCard.classList.add('electronic');
+                electronicCard.onclick = function(){
+                    flip(this);
+                };
+                const frontContent = document.createElement('div');
+                frontContent.classList.add('electronic_desc', 'front-content');
+                frontContent.innerHTML = `
+                    <img src="images/${electronic.name.toLowerCase().replace(' ', '')}.jpg" alt="${electronic.name}">
+                    <h3>${electronic.name}</h3>
+                `;
+                electronicCard.appendChild(frontContent);
+
+                const backContent = document.createElement('div');
+                backContent.classList.add('electronic_desc', 'back-content');
+                electronic.services.forEach(service => {
+                    backContent.innerHTML += `<p onclick="redirect('${service}')">${service}</p>`;
+                });
+                backContent.innerHTML += `<h3>${electronic.name}</h3>`;
+                electronicCard.appendChild(backContent);
+                
+                layananContent.appendChild(electronicCard);
+            });
+        }
+    </script>
+
+</body>
+</html>

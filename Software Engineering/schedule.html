@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <a>BeeService</a>
+            </div>
+            <i class="fa fa-navicon" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="beranda.html">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+
+            <li>
+                <a href="layanan.html">
+                    <i class="fa fa-wrench"></i>
+                    <span class="nav-item">Layanan</span>
+                </a>
+                <span class="tooltip">Layanan</span>
+            </li>
+            
+            <li>
+                <a href="toko.html">
+                    <i class="fa fa-info-circle"></i>
+                    <span class="nav-item">Informasi Toko</span>
+                </a>
+                <span class="tooltip">Informasi Toko</span>
+            </li>
+
+            <li>
+                <a href="pesanan.html">
+                    <i class="fa fa-check-square-o"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+                <span class="tooltip">Pesanan</span>
+            </li>
+
+            <li>
+                <a href="schedule.html">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-item">Jadwal</span>
+                </a>
+                <span class="tooltip">Jadwal</span>
+            </li>
+
+            <li>
+                <a href="riwayat.html">
+                    <i class="fa fa-history"></i>
+                    <span class="nav-item">Riwayat</span>
+                </a>
+                <span class="tooltip">Riwayat</span>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-item">Hubungi Kami</span>
+                </a>
+                <span class="tooltip">Hubungi Kami</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="schedule-wrapper">
+        <div class="schedule-content">
+            <div class="left">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fa fa-angle-left prev"></i>
+                        <div class="date"></div>
+                        <i class="fa fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Minggu</div>
+                        <div>Senin</div>
+                        <div>Selasa</div>
+                        <div>Rabu</div>
+                        <div>Kamis</div>
+                        <div>Jumat</div>
+                        <div>Sabtu</div>
+                    </div>
+
+                    <div class="days"></div>
+
+                    <div class="goto-today">
+                        <div class="goto">
+                            <input type="text" placeholder="mm/yyyy" class="date-input">
+                            <button class="goto-btn">Enter</button>
+                        </div>
+                        <button class="today-btn">Hari Ini</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="today-date">
+                    <div class="event-day"></div>
+                    <div class="event-date"></div>
+                </div>
+                <div class="events"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="calendar.js"></script>
+
+    <footer>
+        <p>&copy; Copyright 2024 - BeeService Inc.</p>
+    </footer>
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.sidebar');
+    
+        btn.onclick = function (){
+            sidebar.classList.toggle('active');
+        };
+    </script>
+
+</body>
+
+</html>

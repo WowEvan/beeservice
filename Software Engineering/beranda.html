@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <a>BeeService</a>
+            </div>
+            <i class="fa fa-navicon" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="beranda.html">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+
+            <li>
+                <a href="layanan.html">
+                    <i class="fa fa-wrench"></i>
+                    <span class="nav-item">Layanan</span>
+                </a>
+                <span class="tooltip">Layanan</span>
+            </li>
+            
+            <li>
+                <a href="toko.html">
+                    <i class="fa fa-info-circle"></i>
+                    <span class="nav-item">Informasi Toko</span>
+                </a>
+                <span class="tooltip">Informasi Toko</span>
+            </li>
+
+            <li>
+                <a href="pesanan.html">
+                    <i class="fa fa-check-square-o"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+                <span class="tooltip">Pesanan</span>
+            </li>
+
+            <li>
+                <a href="schedule.html">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-item">Jadwal</span>
+                </a>
+                <span class="tooltip">Jadwal</span>
+            </li>
+
+            <li>
+                <a href="riwayat.html">
+                    <i class="fa fa-history"></i>
+                    <span class="nav-item">Riwayat</span>
+                </a>
+                <span class="tooltip">Riwayat</span>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-item">Hubungi Kami</span>
+                </a>
+                <span class="tooltip">Hubungi Kami</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+            <li>
+                <a href="" id="profile-btn" onclick="loadUserProfile()">
+                    <i class="fa fa-user-circle"></i>
+                    <span class="nav-item">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>            
+
+        </ul>
+    </div>
+
+    <div class="beranda-content">
+        <div class="banner-container">
+            <img src="images/banner.jpg" alt="">
+        </div>
+        <div class="text-container">
+            <span>
+                Selamat datang di BeeService, tempat yang tepat untuk memenuhi kebutuhan perbaikan dan pemeliharaan perangkat elektronik Anda. Sebagai distributor yang terpercaya, kami menyediakan akses mudah dan nyaman bagi Anda untuk mengakses jasa service terbaik di industri ini. Dengan jaringan mitra servis yang luas dan terpercaya, kami memastikan bahwa Anda mendapatkan layanan yang handal dan berkualitas untuk semua perangkat elektronik Anda.
+
+                Kami memahami betapa pentingnya perangkat elektronik dalam kehidupan sehari-hari Anda, dan kami berkomitmen untuk memberikan solusi terbaik untuk memperbaiki dan merawatnya. Dari televisi hingga kulkas, mesin cuci hingga peralatan dapur, kami memiliki akses ke teknisi ahli yang siap membantu Anda mengatasi masalah dengan cepat dan efisien.
+
+                Dengan BeeService, Anda dapat yakin bahwa perangkat elektronik Anda akan ditangani oleh para profesional yang berpengalaman dan terlatih dengan baik. Kami juga memahami bahwa waktu Anda berharga, oleh karena itu, kami bekerja keras untuk menyediakan layanan yang cepat dan tanpa repot bagi Anda.
+
+                Jadi tunggu apa lagi? Segera hubungi BeeService dan biarkan kami menjadi solusi terpercaya untuk semua kebutuhan perangkat elektronik Anda. Bergabunglah dengan komunitas pelanggan kami yang puas dan nikmati layanan terbaik hanya dengan BeeService. Kami siap membantu Anda membuat perangkat elektronik Anda berfungsi seperti baru lagi. Hubungi kami sekarang dan rasakan perbedaannya!
+            </span>
+        </div>
+        <div class="image-container">
+            <img src="images/tim.jpg" alt="">
+        </div>
+        <div class="testimonial-container">
+            <h1 class="testimonial-title">Review Customer</h1>
+            <div class="testimonial">
+                <div class="col-tes">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Saya sungguh senang dengan layanan BeeService. Melalui website mereka, saya dengan mudah menemukan toko jasa yang profesional untuk menangani perbaikan perangkat elektronik saya. Prosesnya cepat dan efisien, membuat saya merasa diprioritaskan. Terima kasih BeeService! Saya pasti akan merekomendasikan BeeService kepada teman dan keluarga saya.</p>
+                    <div class="beranda-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/profile.jpg" alt="">
+                    <h3>Antony</h3>
+                </div>
+        
+                <div class="col-tes">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Pengalaman saya dengan BeeService sangat memuaskan. Website mereka tidak hanya cepat dalam merespon permintaan perbaikan, tetapi juga memberikan daftar toko jasa yang memberikan solusi akurat dan terjangkau. Saya sangat merekomendasikan BeeService kepada siapa pun yang membutuhkan layanan perbaikan elektronik yang handal.</p>
+                    <div class="beranda-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/profile.jpg" alt="">
+                    <h3>Blake</h3>
+                </div>
+        
+                <div class="col-tes">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Website BeeService benar-benar menyelamatkan saya ketika perangkat elektronik saya mengalami masalah. Melalui website mereka, saya dapat dengan mudah menemukan tim ahli yang ramah dan mampu mengatasi masalah saya dengan cepat, serta memberikan solusi yang bertahan lama. Saya pasti akan menggunakan layanan mereka lagi di masa depan.</p>
+                    <div class="beranda-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/profile.jpg" alt="">
+                    <h3>Charlie</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024 - BeeService Inc.</p>
+    </footer>
+
+</body>
+
+<script src="profile.js"></script>
+
+<script>
+    let btn = document.querySelector('#btn');
+    let sidebar = document.querySelector('.sidebar');
+
+    btn.onclick = function (){
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+</html>

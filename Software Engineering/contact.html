@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+                <a>BeeService</a>
+            </div>
+            <i class="fa fa-navicon" id="btn"></i>
+        </div>
+
+        <ul>
+            <li>
+                <a href="beranda.html">
+                    <i class="fa fa-desktop"></i>
+                    <span class="nav-item">Beranda</span>
+                </a>
+                <span class="tooltip">Beranda</span>
+            </li>
+
+            <li>
+                <a href="layanan.html">
+                    <i class="fa fa-wrench"></i>
+                    <span class="nav-item">Layanan</span>
+                </a>
+                <span class="tooltip">Layanan</span>
+            </li>
+            
+            <li>
+                <a href="toko.html">
+                    <i class="fa fa-info-circle"></i>
+                    <span class="nav-item">Informasi Toko</span>
+                </a>
+                <span class="tooltip">Informasi Toko</span>
+            </li>
+
+            <li>
+                <a href="pesanan.html">
+                    <i class="fa fa-check-square-o"></i>
+                    <span class="nav-item">Pesanan</span>
+                </a>
+                <span class="tooltip">Pesanan</span>
+            </li>
+
+            <li>
+                <a href="schedule.html">
+                    <i class="fa fa-calendar"></i>
+                    <span class="nav-item">Jadwal</span>
+                </a>
+                <span class="tooltip">Jadwal</span>
+            </li>
+
+            <li>
+                <a href="riwayat.html">
+                    <i class="fa fa-history"></i>
+                    <span class="nav-item">Riwayat</span>
+                </a>
+                <span class="tooltip">Riwayat</span>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    <i class="fa fa-phone"></i>
+                    <span class="nav-item">Hubungi Kami</span>
+                </a>
+                <span class="tooltip">Hubungi Kami</span>
+            </li>
+
+            <li>
+                <a href="login.html">
+                    <i class="fa fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+
+        </ul>
+    </div>
+    
+    <div class="contact-content">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>
+                    <img src="images/wa.jpg" alt="">
+                    <p>(+62)895613663334</p>
+                </li>
+                <li>
+                    <img src="images/gmail.jpg" alt="">
+                    <p>filbert@gmail.com</p>
+                </li>
+                <li>
+                    <img src="images/line.jpg" alt="">
+                    <p>filbert08</p>
+                </li>
+                <li>
+                    <img src="images/ig.jpg" alt="">
+                    <p>flbt08</p>
+                </li>
+                <li>
+                    <img src="images/map.jpg" alt="">
+                    <p>Jl. Pluit Selatan Raya No.1, Penjaringan, Kec. Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14440</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm" method="POST" autocomplete="off">
+                <label for="name">Nama Pengguna</label>
+                <input type="text" id="name" autocomplete="off">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off">
+                
+                <label for="message">Pesan</label>
+                <textarea id="message" autocomplete="off"></textarea>
+                
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+
+        <div class="popup" id="popup">
+            <img src="images/tick.jpg" alt="">
+            <h2>Terima Kasih!</h2>
+            <p>Feedback Anda berhasil dikirim. Terima kasih atas masukan Anda!</p>
+            <button type="button" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024 - BeeService Inc.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+    
+</body>
+</html>
